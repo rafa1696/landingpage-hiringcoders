@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquidação Black Friday</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="topo">
+        <nav class="topo__navbar">
+            <ul>
+                <li>Liquida Black Friday</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="principal__secao">
+            <div class="principal__secao___texto">
+                <h1>Black Friday</h1>
+                <p>Registre-se e fique atento às promoções que começam dia 26/11 às 00:00h!</p>
+                <img class="principal__secao___texto___imagem" src="/assets/flat-box-icon.svg" alt="">
+            </div>
+            <div class="principal__secao___form">
+                <div class="principal__secao___form-container">
+                    <form class="principal__secao___form-form">
+                        <fieldset>
+                            <div>
+                                <label for="nome">Nome</label>
+                                <input placeholder="Digite seu nome" name="nome" type="text" id="nome" class="input"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input placeholder="Digite seu e-mail" name="email" type="email" id="email"
+                                    class="input" required>
+                            </div>
+                            <div>
+                                <button value="submit" type="button" onclick="validar()">Enviar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="principal__secao___form-contagem">
+                        <p>Quanto falta até o início:</p>
+                        <div id="contagem"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="principal__rodape">
+        <p>&copy;Rafael Ferreira</p>
+    </footer>
+    <script src="/js/contagem.js"></script>
+    <script src="/js/checagem.js"></script>
+</body>
+
+</html>
